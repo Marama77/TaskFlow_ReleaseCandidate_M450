@@ -1,0 +1,14 @@
+{
+  "name": "taskflow-release-candidate",
+  "version": "1.4.0-rc1",
+  "private": true,
+  "description": "Starterprojekt fuer Modul 450 LB-02 - Release Candidate Go/No-Go",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

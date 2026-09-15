@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "TaskFlow LB02 Starter",
+    "_postman_id": "m450-lb02-taskflow",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "{{baseUrl}}/api/health", "host": ["{{baseUrl}}"], "path": ["api", "health"] }
+      }
+    },
+    {
+      "name": "Login Alice",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"email\": \"alice@example.test\",\n  \"password\": \"Start123!\"\n}" },
+        "url": { "raw": "{{baseUrl}}/api/login", "host": ["{{baseUrl}}"], "path": ["api", "login"] }
+      }
+    },
+    {
+      "name": "Tasks Alice",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Authorization", "value": "Bearer {{aliceToken}}" }],
+        "url": { "raw": "{{baseUrl}}/api/tasks", "host": ["{{baseUrl}}"], "path": ["api", "tasks"] }
+      }
+    },
+    {
+      "name": "Task erstellen",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{aliceToken}}" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": { "mode": "raw", "raw": "{\n  \"title\": \"LB02 Testtask\",\n  \"priority\": \"HIGH\",\n  \"dueDate\": \"2026-09-30\"\n}" },
+        "url": { "raw": "{{baseUrl}}/api/tasks", "host": ["{{baseUrl}}"], "path": ["api", "tasks"] }
+      }
+    },
+    {
+      "name": "Task t1 aendern als Bob",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{bobToken}}" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": { "mode": "raw", "raw": "{\n  \"status\": \"DONE\"\n}" },
+        "url": { "raw": "{{baseUrl}}/api/tasks/t1", "host": ["{{baseUrl}}"], "path": ["api", "tasks", "t1"] }
+      }
+    }
+  ]
+}
