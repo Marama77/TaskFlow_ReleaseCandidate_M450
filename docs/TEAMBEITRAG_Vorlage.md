@@ -2,26 +2,21 @@
 
 ## Team
 
-- Teamname / Nummer:
-- Mitglied 1:
-- Mitglied 2:
-- Mitglied 3 (falls vorhanden):
+- Teamname / Nummer: Team Marianne, Teamnummer 7
+- Mitglied 1: Marianne Stieber
 
 ## Aufgabenteilung
 
 | Person | Hauptbeitraege | Konkrete Dateien / Tests / Findings | Zeitaufwand ca. |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-
-## Gemeinsame Arbeiten
-
-Beschreiben Sie kurz, welche Entscheidungen gemeinsam getroffen wurden, zum Beispiel Teststrategie, Risikopriorisierung und GO/NO-GO-Entscheid.
+|Marianne|Alles|siehe Arbeit|siehe Testprotokoll/Testfaelle|siehe README.md|ca. 20h
 
 ## Verwendete Hilfsmittel
 
 Listen Sie externe Quellen, Tools und gegebenenfalls KI-Werkzeuge auf. Bei KI-Nutzung muss kurz beschrieben werden, wofuer das Werkzeug eingesetzt wurde.
+
+KI-Werkzeuge: Claude und ChatGPT. Die KI-Werkzeuge wurden benutzt, um verschiedene Begrifflichkeiten zu ergründen, wie z.B. Evidenz, Severity, Unterschied Unit-Test/API-Test etc. Auch liess ich mir von der KI erklären, wie eine csv-Datei erstellt und verwendet wird. 
+
+Die KI half mir dabei, den Code auf Fehler zu prüfen, oder gefundene Fehler zu bestätigen. 
 
 ## Bestaetigung
 

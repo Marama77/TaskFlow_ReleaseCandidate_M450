@@ -2,19 +2,15 @@
 
 ## Entscheidung
 
-**GO / NO-GO**
+**NO-GO**
 
-Nicht Zutreffendes loeschen. Es muss genau eine Entscheidung abgegeben werden.
+Aufgrund von **mehreren kritischen Sicherheitslücken** sowie **mangelhafter Fehlerbehandlung** wird die Produktivsetzung dieses Release Candidates abgelehnt. Eine Nachbesserung ist dringend erforderlich.
 
 ## Begruendung
 
-Nennen Sie die drei bis fuenf wichtigsten Argumente auf Basis Ihrer Testresultate und Risiken.
-
-1.
-2.
-3.
-4.
-5.
+1. Alle Benutzer können auf alle Tasks zugreifen, sie lesen und verändern = Sicherheitsrisiko
+2. Tasks können auf Daten in der Vergangenheit gesetzt werden = Sicherheitsrisiko.
+3. Kontosperrung erfolgt erst nach 6, nicht nach 5 erfolglosen Einloggungs-Versuchen = Sicherheitsrisiko.
 
 ## Offene Defects
 
@@ -29,3 +25,5 @@ Welche wesentlichen Risiken wurden ausreichend getestet? Welche Risiken bleiben 
 ## Empfohlene naechste Schritte
 
 Was muss vor oder nach einem Release noch gemacht werden?
+
+Der Code muss vollständig von Fehlern befreit und geprüft werden, um die Anforderungen und den API-Vertrag zu erfüllen. 
