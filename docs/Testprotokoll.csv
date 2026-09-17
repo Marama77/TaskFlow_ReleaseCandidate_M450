@@ -1,0 +1,4 @@
+Test-ID;Tester;Datum_Uhrzeit;Version;Umgebung;Soll;Ist;Resultat_PASS_FAIL;Defect-ID;Evidenz
+T-10;Marianne;16.09.2026 20:30;v1.4.0-rc1;Localhost / Testumgebung;HTTP 403 Forbidden;HTTP 200 OK;FAIL;D-01;AssertionError [ERR_ASSERTION]: 200 !== 403
+T-13;Marianne;17.09.2026 20:30;v1.4.0-rc1;Localhost / Testumgebung;HTTP 201 Created mit priority: 'MEDIUM';HTTP 201 Created mit priority: 'LOW';FAIL;D-03;AssertionError: Expected 'LOW' to be 'MEDIUM'
+T-13;Marianne;17.09.2026 20:45;v1.4.0-rc1 (Fixed);Localhost / Testumgebung;HTTP 201 Created mit priority: 'MEDIUM';HTTP 201 Created mit priority: 'MEDIUM';PASS;;assert.equal(body.priority, 'MEDIUM')

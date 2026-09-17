@@ -2,7 +2,7 @@
 
 ## Team
 
-- Teamname / Nummer: Team Marianne, Teamnummer 7
+- Teamname: Team Marianne
 - Mitglied 1: Marianne Stieber
 
 ## Aufgabenteilung
@@ -14,9 +14,14 @@
 
 Listen Sie externe Quellen, Tools und gegebenenfalls KI-Werkzeuge auf. Bei KI-Nutzung muss kurz beschrieben werden, wofuer das Werkzeug eingesetzt wurde.
 
-KI-Werkzeuge: Claude und ChatGPT. Die KI-Werkzeuge wurden benutzt, um verschiedene Begrifflichkeiten zu ergründen, wie z.B. Evidenz, Severity, Unterschied Unit-Test/API-Test etc. Auch liess ich mir von der KI erklären, wie eine csv-Datei erstellt und verwendet wird. 
+Kursmaterialien CsBe 
+[Github](https://github.com/avajs/ava/tree/main/test)
+ComputerWeekly.de
 
-Die KI half mir dabei, den Code auf Fehler zu prüfen, oder gefundene Fehler zu bestätigen. 
+
+KI-Werkzeuge: Gemini. Das KI-Werkzeug wurde benutzt, um verschiedene Begrifflichkeiten zu ergründen, Unterschiede Unit-Test/API-Test etc zu lernen, wie umgehen mit csv-Dateien und VSC etc. 
+
+Die KI half mir auch dabei, Code besser oder überhaupt zu verstehen.
 
 ## Bestaetigung
 

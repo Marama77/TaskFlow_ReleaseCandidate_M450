@@ -22,6 +22,8 @@ Aufgrund von **mehreren kritischen Sicherheitslücken** sowie **mangelhafter Feh
 
 Welche wesentlichen Risiken wurden ausreichend getestet? Welche Risiken bleiben offen?
 
+
+
 ## Empfohlene naechste Schritte
 
 Was muss vor oder nach einem Release noch gemacht werden?
