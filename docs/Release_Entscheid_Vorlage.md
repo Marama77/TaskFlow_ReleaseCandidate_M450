@@ -20,7 +20,8 @@ Aufgrund von **mehreren kritischen Sicherheitslücken** sowie **mangelhafter Feh
 
 ## Testabdeckung
 
-Welche wesentlichen Risiken wurden ausreichend getestet? Welche Risiken bleiben offen?
+R-07 wurde ausreichend getestet und gefixt.
+
 
 
 

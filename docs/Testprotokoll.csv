@@ -1,4 +1,5 @@
 Test-ID;Tester;Datum_Uhrzeit;Version;Umgebung;Soll;Ist;Resultat_PASS_FAIL;Defect-ID;Evidenz
-T-10;Marianne;16.09.2026 20:30;v1.4.0-rc1;Localhost / Testumgebung;HTTP 403 Forbidden;HTTP 200 OK;FAIL;D-01;AssertionError [ERR_ASSERTION]: 200 !== 403
-T-13;Marianne;17.09.2026 20:30;v1.4.0-rc1;Localhost / Testumgebung;HTTP 201 Created mit priority: 'MEDIUM';HTTP 201 Created mit priority: 'LOW';FAIL;D-03;AssertionError: Expected 'LOW' to be 'MEDIUM'
-T-13;Marianne;17.09.2026 20:45;v1.4.0-rc1 (Fixed);Localhost / Testumgebung;HTTP 201 Created mit priority: 'MEDIUM';HTTP 201 Created mit priority: 'MEDIUM';PASS;;assert.equal(body.priority, 'MEDIUM')
+T-10;Marianne;16.09.2026 20:30;v1.4.0-rc1;Localhost / Node.js;HTTP 403 Forbidden;HTTP 200 OK;FAIL;DEF-01;AssertionError [ERR_ASSERTION]: 200 !== 403
+T-13;Marianne;17.09.2026 20:30;v1.4.0-rc1;Localhost / Node.js;HTTP 201 Created mit priority: 'MEDIUM';HTTP 201 Created mit priority: 'LOW';FAIL;DEF-03;AssertionError: Expected 'LOW' to be 'MEDIUM'
+T-13;Marianne;17.09.2026 20:45;v1.4.0-rc1 (Fix DEF-03);Localhost / Node.js;HTTP 201 Created mit priority: 'MEDIUM';HTTP 201 Created mit priority: 'MEDIUM';PASS;DEF-03;assert.equal(body.priority, 'MEDIUM')
+TC-10;Marianne;18.09.2026 20:50;1.4.0-rc1 (Fix DEF-01);Localhost / Node.js;HTTP 200, items enthält nur Tasks mit ownerId=u1 (Alice);HTTP 200, items enthält nur Task t1 (ownerId=u1);PASS;DEF-01;Response Body: items=[t1(u1)] - Bob's Task t2 nicht mehr sichtbar

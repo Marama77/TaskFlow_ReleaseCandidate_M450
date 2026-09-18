@@ -26,3 +26,28 @@ test('normaler Mitarbeiter darf nicht alle Tasks sehen (403 Forbidden)', async (
       assert.equal(response.status, 403);
     });
   });
+
+  // Verbesserter, bzw. korrigierter Test
+  test('Mitarbeiter sieht nur eigene Tasks', async () => {
+    await withServer(async ({ baseUrl }) => {
+      const response = await fetch(`${baseUrl}/api/tasks`, {
+        headers: { authorization: 'Bearer token-alice' }
+      });
+      const body = await response.json();
+      const fremdeTasks = body.items.filter((t) => t.ownerId !== 'u1');
+      assert.equal(fremdeTasks.length, 0);
+    });
+  });
+
+  // Noch besserer Test (mit korrekter Statuscode-Testung)
+  test('normaler Mitarbeiter darf nicht alle Tasks sehen', async () => {
+    await withServer(async ({ baseUrl }) => {
+      const response = await fetch(`${baseUrl}/api/tasks`, {
+        headers: { authorization: 'Bearer token-alice' }
+      });
+      assert.equal(response.status, 200);          // Zugriff auf Endpoint erlaubt
+      const body = await response.json();
+      const fremdeTasks = body.items.filter((t) => t.ownerId !== 'u1');
+      assert.equal(fremdeTasks.length, 0);          // keine fremden Tasks sichtbar
+    });
+  });

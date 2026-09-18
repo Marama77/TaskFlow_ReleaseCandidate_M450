@@ -4,7 +4,8 @@ function listTasks(store, user) {
   if (user.role === 'admin') {
     return store.tasks;
   }
-  return store.tasks;
+  //return store.tasks;
+  return store.tasks.filter((task) => task.ownerId === user.id);
 }
 
 function createTask(store, user, input) {
@@ -17,7 +18,7 @@ function createTask(store, user, input) {
     id: `t${store.nextTaskId++}`,
     title: String(input.title),
     description: input.description || '',
-    priority: input.priority || 'LOW',
+    priority: input.priority || 'MEDIUM',
     status: 'OPEN',
     dueDate: input.dueDate || null,
     ownerId: user.id
@@ -28,6 +29,7 @@ function createTask(store, user, input) {
 
 function canEditTask(user, task) {
   return user.role === 'admin' || Boolean(user);
+  //return user.role === 'admin' || Boolean(task.ownerId === user.id);
 }
 
 function patchTask(store, user, id, input) {

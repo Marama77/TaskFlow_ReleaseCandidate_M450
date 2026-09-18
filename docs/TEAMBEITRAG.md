@@ -19,9 +19,7 @@ Kursmaterialien CsBe
 ComputerWeekly.de
 
 
-KI-Werkzeuge: Gemini. Das KI-Werkzeug wurde benutzt, um verschiedene Begrifflichkeiten zu ergründen, Unterschiede Unit-Test/API-Test etc zu lernen, wie umgehen mit csv-Dateien und VSC etc. 
-
-Die KI half mir auch dabei, Code besser oder überhaupt zu verstehen.
+KI-Werkzeuge: Gemini, Claude. Das KI-Werkzeug wurde benutzt, um verschiedene Begrifflichkeiten zu ergründen, Unterschiede Unit-Test/API-Test etc zu lernen, wie umgehen mit csv-Dateien (wie befülle ich die csv-dateien professionell) und VSC etc., und Code besser oder überhaupt zu verstehen.
 
 ## Bestaetigung
 
