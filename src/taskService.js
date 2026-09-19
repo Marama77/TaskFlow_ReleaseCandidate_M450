@@ -29,7 +29,7 @@ function createTask(store, user, input) {
 
 function canEditTask(user, task) {
   return user.role === 'admin' || Boolean(user);
-  //return user.role === 'admin' || Boolean(task.ownerId === user.id);
+  //return user.role === 'admin' || task.ownerId === user.id;
 }
 
 function patchTask(store, user, id, input) {
